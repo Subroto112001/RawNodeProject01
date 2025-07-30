@@ -1,0 +1,23 @@
+{
+  "name": "rawnodeproject01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subroto112001/RawNodeProject01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Subroto112001/RawNodeProject01/issues"
+  },
+  "homepage": "https://github.com/Subroto112001/RawNodeProject01#readme",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
