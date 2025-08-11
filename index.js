@@ -7,7 +7,11 @@
  * dependencies
  * */
 const http = require("http");
-
+const { parse } = require("path");
+const { buffer } = require("stream/consumers");
+const url = require("url")
+const {StringDecoder}= require("string_decoder");
+const { handleReqRes } = require("./helpers/HandleReqRes");
 // app object - module scafholding
 
 const app = {};
@@ -27,9 +31,7 @@ app.createServer = () => {
 };
 
 // handle request response
-app.handleReqRes = (req, res) => {
-  res.end("Hello boss");
-};
+app.handleReqRes = handleReqRes;
 
 
 // start the server
