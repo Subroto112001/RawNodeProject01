@@ -12,6 +12,8 @@ const { buffer } = require("stream/consumers");
 const url = require("url")
 const {StringDecoder}= require("string_decoder");
 const { handleReqRes } = require("./helpers/HandleReqRes");
+
+
 // app object - module scafholding
 
 const app = {};
@@ -20,6 +22,12 @@ const app = {};
 app.config = {
     port: 3000
 };
+
+
+// handle request response
+app.handleReqRes = handleReqRes;
+
+
 
 // create server
 app.createServer = () => {
@@ -30,8 +38,7 @@ app.createServer = () => {
     })
 };
 
-// handle request response
-app.handleReqRes = handleReqRes;
+
 
 
 // start the server
